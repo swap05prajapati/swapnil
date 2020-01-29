@@ -1,17 +1,17 @@
 //import 'package:testaap/product.dart';
 //import 'package:testaap/registration.dart';
 import 'dart:io';
-import 'package:day2/branch.dart';
 
 // import '../lib/branch.dart';
 // import '../lib/course.dart';
 // import '../lib/stdudent.dart';
-// import '../lib/uber.dart';
 // import '../lib/university.dart';
-// import 'dart:math';
+// import 'package:day2/address.dart';
+import 'package:day2/uber.dart';
+import 'dart:math';
 //import 'package:testaap/testaap.dart' as testaap;
 
-void main(List<String> arguments) {
+void main(List<String> arguments) 
 //{
   //var p = Product('samsung',3500,10);
 
@@ -115,23 +115,36 @@ void main(List<String> arguments) {
     break;
   }
 }*/
-/*{
-  int chocolate;
-  int i;
-  print('enter the num of choco:');
-  chocolate = int.parse(stdin.readLineSync());
-  print(chocolate);
-  i=chocolate%2;
-  if(i==0)
+{
+  // int chocolate;
+  // int i;
+  // print('enter the num of choco:');
+  // chocolate = int.parse(stdin.readLineSync());
+  // print(chocolate);
+  // i=chocolate%2;
+  // if(i==0)
+  // {
+  //   print('buy the chocolate');
+  // }
+  // else
+  // {
+  //   print('can not buy');
+  // }
+  /*var o =Online();
+  var c =Classic();
+  print('enter the distance:');
+  var distance = int.parse(stdin.readLineSync());
+  o.taxi_fair(distance);
+  c.taxi_fair(distance);*/
+  var number = List();
+  int lenght;
+  print('enter the lenght of the string:');
+  int length = int.parse(stdin.readLineSync());
+
+  for(int i=0; i<length; i++)
   {
-    print('buy the chocolate');
+    number.add(int.parse(stdin.readLineSync()));
   }
-  else
-  {
-    print('can not buy');
-  }
-}*/
-
-
-
+  number.sort();
+  print(number);
 }
