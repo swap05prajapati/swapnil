@@ -136,15 +136,59 @@ void main(List<String> arguments)
   var distance = int.parse(stdin.readLineSync());
   o.taxi_fair(distance);
   c.taxi_fair(distance);*/
-  var number = List();
-  int lenght;
-  print('enter the lenght of the string:');
-  int length = int.parse(stdin.readLineSync());
+ // var number = List();
+  //int lenght;
+  //print('enter the lenght of the list:');
+  //int length = int.parse(stdin.readLineSync());
 
-  for(int i=0; i<length; i++)
+  //for(int i=0; i<length; i++)
+  //{
+   // number.add(int.parse(stdin.readLineSync()));
+  //}
+  //number.sort();
+  //print(number);
+  /*int number;
+  var price = List();
+  var total = 0;
+  String country;
+  double currency;
+  print('enter the no. of product:');
+  number = int.parse(stdin.readLineSync());
+
+  print('enter the price of product:');
+  for(int i=0; i<number; i++)
   {
-    number.add(int.parse(stdin.readLineSync()));
+    price.add(int.parse(stdin.readLineSync()));
+    total = total+price[i];
   }
-  number.sort();
-  print(number);
+
+  print('enter the country name:');
+  country = stdin.readLineSync();
+  
+  if(country=='india')
+  {
+    print('the total amount pay:$total');
+  }
+  else
+  {
+    print('enter the respective country currency:');
+    currency = double.parse(stdin.readLineSync());
+    total = total~/currency;
+    print('total amount:$total');
+  }*/
+  var lenght = List();
+  int queue;
+  
+  print('enter the no of queue:');
+  queue = int.parse(stdin.readLineSync());
+
+  print('enter the each queue lenght:');
+  for(var i=0; i<queue; i++)
+  {
+    lenght.add(int.parse(stdin.readLineSync()));
+  }
+
+
+
+
 }
