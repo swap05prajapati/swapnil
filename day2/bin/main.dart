@@ -121,7 +121,7 @@ void main(List<String> arguments)
   // print('enter the num of choco:');
   // chocolate = int.parse(stdin.readLineSync());
   // print(chocolate);
-  // i=chocolate%2;
+  // i=chocolate%31;
   // if(i==0)
   // {
   //   print('buy the chocolate');

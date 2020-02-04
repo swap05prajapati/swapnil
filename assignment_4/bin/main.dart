@@ -19,22 +19,16 @@ void main(List<String> arguments) {
 
   /*.............product_bill.............*/
   int number;
-  var price = List();
+  List<int> price =[500,345,679,470];
   var total = 0;
   String country;
   double currency;
-  print('enter the no. of product:');
-  number = int.parse(stdin.readLineSync());
-
-  print('enter the price of product:');
-  for(int i=0; i<number; i++)
-  {
-    price.add(int.parse(stdin.readLineSync()));
-    total = total+price[i];
-  }
-
-  print('enter the country name:');
+  print('enter the country name:china,india,usa');
   country = stdin.readLineSync();
+  print('Enter the 4 item in indian rupees:$price'); 
+  print('how many item want to buy 1,2,3,4:');
+  number=int.parse(stdin.readLineSync());
+  print('total amount: $total');
   
   if(country=='india')
   {
