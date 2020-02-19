@@ -2,14 +2,15 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'formpage.dart';
 import 'home.dart';
 
 class Login_page extends StatefulWidget{
   @override
-  State<StatefulWidget> createState() => LonigSate();
+  State<StatefulWidget> createState() => LoginSate();
 }
 
-class LonigSate extends State<Login_page>
+class LoginSate extends State<Login_page>
 {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
@@ -91,6 +92,7 @@ class LonigSate extends State<Login_page>
                         ),
                       ),
                       color:Colors.white,
+                      
                     ),
                   ),
                   Expanded(
@@ -130,7 +132,7 @@ class LonigSate extends State<Login_page>
                            color:Colors.lightBlue,
                            padding: EdgeInsets.symmetric(vertical:10,horizontal: 20),
                            margin:EdgeInsets.only(right:10),
-                           child:RaisedButton(
+                           child:FloatingActionButton(
                           child:Text('Register',
                            textAlign: TextAlign.center,
                            style: TextStyle(
@@ -228,22 +230,4 @@ class First extends StatelessWidget
     );
   }
   
-}
-class Formpage extends StatefulWidget
-{
-  @override
-  _FormpageState createState() => _FormpageState();
-}
-
-class _FormpageState extends State<Formpage> {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-      appBar:AppBar(
-        title:Text('Register'),
-        centerTitle: true,
-      ),
-    );
-  }
 }
